@@ -4,8 +4,6 @@ Une **fenêtre modale accessible et stylisable** développée en React pour remp
 
 Ce composant React est pensé pour être **léger**, **accessible au clavier**, **facile à personnaliser** via CSS, et parfaitement réutilisable dans vos projets.
 
-📦 Disponible sur npm : [react-custom-modal-publish](https://www.npmjs.com/package/react-custom-modal-publish)
-
 ---
 
 ## ✨ Fonctionnalités
@@ -112,3 +110,8 @@ src/
 ## 📝 Licence
 
 MIT – libre d’utilisation et de modification.
+
+## 🔗 Liens utiles
+
+📦 [Package sur npm](https://www.npmjs.com/package/react-custom-modal-publish)  
+💻 [Code source sur GitHub](https://github.com/Melba17/react-custom-modal-publish)
