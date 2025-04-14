@@ -1,0 +1,16 @@
+{
+  "name": "react-custom-modal-publish",
+  "version": "1.0.1",
+  "description": "Modal accessible et stylisable en React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "modal",
+    "accessible"
+  ],
+  "author": "Melba17",
+  "license": "MIT"
+}
