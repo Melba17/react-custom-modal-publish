@@ -1,28 +1,28 @@
 # React Custom Modal
 
-Une **fenêtre modale accessible et stylisable** développée en React pour remplacer le plugin jQuery [`jquery.modal`](https://github.com/kylefox/jquery-modal).
+An **accessible and customizable modal window** built with React, designed to replace the jQuery plugin [`jquery.modal`](https://github.com/kylefox/jquery-modal).
 
-Ce composant React est pensé pour être **léger**, **accessible au clavier**, **facile à personnaliser** via CSS, et parfaitement réutilisable dans vos projets.
-
----
-
-## ✨ Fonctionnalités
-
-- ⚛️ Composant React réutilisable  
-- ♿ Accessibilité (`role="dialog"`, `aria-modal`, navigation clavier)  
-- 🎨 Design personnalisable (taille, couleurs, typographie…)  
-- 🚀 Icônes modernes via [Font Awesome](https://fontawesome.com/)  
-- 🌈 Animation fluide à l’ouverture (`fadeInScale`)  
-- 💻 Apparence inspirée de la charte graphique HRnet  
+This component is built to be **lightweight**, **keyboard accessible**, **easy to style with CSS**, and perfectly reusable in modern projects.
 
 ---
 
-## ⚠️ Pré-requis
+## ✨ Features
 
-Ce composant nécessite :
+- ⚛️ Reusable React component  
+- ♿ Accessibility support (`role="dialog"`, `aria-modal`, keyboard navigation)  
+- 🎨 Fully customizable design (size, colors, typography…)  
+- 🚀 Modern icons via [Font Awesome](https://fontawesome.com/)  
+- 🌈 Smooth opening animation (`fadeInScale`)  
+- 💻 Styling inspired by the HRnet design system  
 
-- React 17 ou supérieur
-- react-dom
+---
+
+## ⚠️ Requirements
+
+This component requires:
+
+- React 17 or higher  
+- react-dom  
 
 ---
 
@@ -32,11 +32,11 @@ Ce composant nécessite :
 npm install react-custom-modal-publish
 ```
 
-> Ce package suppose que vous avez déjà installé `react` et `react-dom` dans votre projet.
+> This package assumes that `react` and `react-dom` are already installed in your project.
 
-### Dépendances externes
+### External dependencies
 
-Si ce n’est pas déjà fait, installez également les icônes FontAwesome utilisées dans la modale :
+If you haven’t already, install the Font Awesome icons used by the modal:
 
 ```bash
 npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
@@ -44,7 +44,7 @@ npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
 
 ---
 
-## 🚀 Intégration dans un projet React
+## 🚀 How to use
 
 ```jsx
 import Modal from 'react-custom-modal-publish'
@@ -60,7 +60,7 @@ function App() {
       <Modal
         isOpen={showModal}
         onClose={() => setShowModal(false)}
-        title="Great news !"
+        title="Great news!"
       >
         <p>The new employee has been successfully created.</p>
       </Modal>
@@ -71,32 +71,31 @@ function App() {
 
 ---
 
-## 📋 Props disponibles
+## 📋 Available props
 
-| Prop        | Type         | Requis | Description                                                |
-|-------------|--------------|--------|------------------------------------------------------------|
-| `isOpen`    | `boolean`    | ✅     | Affiche ou masque la modale                                |
-| `onClose`   | `function`   | ✅     | Fonction exécutée lors de la fermeture                     |
-| `title`     | `string`     | ✅     | Titre affiché dans l’en-tête, accompagné d'une icône fusée |
-| `children`  | `ReactNode`  | ✅     | Contenu dynamique (texte, balises ou composants React)     |
-
----
-
-## 🎨 Personnalisation du style
-
-Le style de la modale est géré via un fichier `Modal.css` intégré.
-
-Vous pouvez le modifier selon vos besoins :
-
-- **Police par défaut** : `'Segoe UI', sans-serif`
-- **Couleurs** cohérentes avec l’interface HRnet
-- **Animation** d’entrée fluide (zoom/fade)
-- **Boutons stylisés**, icônes FontAwesome (fusée et croix)
-- **Responsive** : marges prévues sur petits écrans
+| Prop        | Type         | Required | Description                                              |
+|-------------|--------------|----------|----------------------------------------------------------|
+| `isOpen`    | `boolean`    | ✅       | Controls the modal's visibility                          |
+| `onClose`   | `function`   | ✅       | Called when the modal is closed                          |
+| `title`     | `string`     | ✅       | Modal header title, displayed with a rocket icon         |
+| `children`  | `ReactNode`  | ✅       | Modal content (text, HTML elements, or React components) |
 
 ---
 
-## 📁 Exemple de structure
+## 🎨 Styling
+
+The modal styling is handled through the included `Modal.css` file.
+
+You can customize it freely:
+
+- **Default font**: `'Segoe UI', sans-serif`  
+- **Colors** consistent with the HRnet UI  
+- **Zoom/fade** animation on open  
+- **Styled buttons**, FontAwesome icons (rocket and close)  
+
+---
+
+## 📁 Example file structure
 
 ```plaintext
 src/
@@ -107,11 +106,13 @@ src/
 
 ---
 
-## 📝 Licence
+## 📝 License
 
-MIT – libre d’utilisation et de modification.
+MIT – free to use and modify.
 
-## 🔗 Liens utiles
+---
 
-📦 [Package sur npm](https://www.npmjs.com/package/react-custom-modal-publish)  
-💻 [Code source sur GitHub](https://github.com/Melba17/react-custom-modal-publish)
+## 🔗 Useful links
+
+📦 [View on npm](https://www.npmjs.com/package/react-custom-modal-publish)  
+💻 [Source code on GitHub](https://github.com/Melba17/react-custom-modal-publish)
