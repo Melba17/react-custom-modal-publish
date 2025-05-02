@@ -1,4 +1,4 @@
-# React Custom Modal
+# React Custom Modal Publish
 
 An **accessible and customizable modal window** built with React, designed to replace the jQuery plugin [`jquery.modal`](https://github.com/kylefox/jquery-modal).
 
