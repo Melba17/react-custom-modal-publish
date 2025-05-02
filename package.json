@@ -1,6 +1,6 @@
 {
   "name": "react-custom-modal-publish",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Modal accessible et stylisable en React",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Melba17/react-custom-modal-publish.git"
+    "url": "git+https://github.com/Melba17/react-custom-modal-publish.git"
   },
   "homepage": "https://github.com/Melba17/react-custom-modal-publish#readme"
 }
