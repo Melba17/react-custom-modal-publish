@@ -1,6 +1,6 @@
 {
   "name": "react-custom-modal-publish",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Modal accessible et stylisable en React",
   "main": "index.js",
   "scripts": {

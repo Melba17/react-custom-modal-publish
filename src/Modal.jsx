@@ -3,14 +3,18 @@ import './Modal.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // Importe deux icônes spécifiques depuis la bibliothèque "free-solid" (style du pack d'icônes : solid, regular, light, duotone etc.. ) de FontAwesome (ici, croix et fusée)
 import { faTimes, faRocket } from '@fortawesome/free-solid-svg-icons'
+import PropTypes from 'prop-types';
+
 
 /**
  * Composant de fenêtre modale accessible et stylisable.
  *
- * @param {boolean} isOpen - Affiche ou masque la modale
- * @param {function} onClose - Fonction appelée à la fermeture
- * @param {string} title - Titre de la modale
- * @param {React.ReactNode} children - Contenu dynamique de la modale
+ * @component
+ * @param {boolean} isOpen - Affiche ou masque la modale.
+ * @param {function} onClose - Fonction appelée à la fermeture (croix ou bouton).
+ * @param {string} title - Titre de la modale.
+ * @param {React.ReactNode} children - Contenu dynamique de la modale (texte, JSX, etc.).
+ * @returns {JSX.Element|null} Modale rendue ou `null` si masquée.
  */
 function Modal({ isOpen, onClose, title, children }) {
   if (!isOpen) return null
@@ -40,5 +44,12 @@ function Modal({ isOpen, onClose, title, children }) {
     </div>
   )
 }
+
+Modal.propTypes = {
+  isOpen: PropTypes.bool.isRequired, 
+  onClose: PropTypes.func.isRequired, 
+  title: PropTypes.string.isRequired, 
+  children: PropTypes.node.isRequired, 
+};
 
 export default Modal
